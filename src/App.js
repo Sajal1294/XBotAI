@@ -14,10 +14,8 @@ function App() {
   const [chat, setChat] = useState([])
   const [menuOpen, setMenuOpen] = useState(false)
 
-  //create theme
   const theme = React.useMemo(() => createTheme(getThemePallete(mode)), [mode]);
 
-  //save theme mode in localstorage
   useEffect(() => {
 
     localStorage.setItem('theme', mode)

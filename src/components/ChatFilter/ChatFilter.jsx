@@ -9,7 +9,6 @@ export default function ChatFilter({ allChats, filterChats }) {
         setOption(e.target.value)
     }
 
-    // FILTER CHATS
     useEffect(() => {
 
         if (option == 'All Ratings') {
